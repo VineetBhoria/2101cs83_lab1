@@ -1,4 +1,8 @@
 #include <stdio.h>
+float add(float x, float y)
+{
+    return x+y;
+}
 int main()
 {
     int a;
@@ -15,7 +19,7 @@ int main()
     printf("Enter - for subtraction : ");
     printf("Enter / for division : ");
     printf("Enter * for multiplicationS : ");
-    
+
     switch (a)
     {
     case '+':
