@@ -1,59 +1,67 @@
 #include <stdio.h>
-float add(float x, float y)
-{
-    return x+y;
-}
-float sub(float x, float y)
-{
-    return x-y;
-}
-float div(float x, float y)
-{
-    return x/y;
-}
-float mult(float x, float y)
-{
-    return x*y;
-}
+float add(float num1, float num2);
+float sub(float num1, float num2);
+float div(float num1, float num2);
+float mult(float num1, float num2);
+
 int main()
 {
     int a;
-    float b,c;
+    float b, c, temp;
     printf("WELCOME TO SIMPLE CALCULATOR\n");
     printf("---------------------------------------------------------------------------------------------------------------------------------\n");
 
-    printf("Enter the first number\n");
-    scanf("%f",&b);
-    printf("Enter the second number\n");
-    scanf("%f",&b);
+    printf("Enter 1 for addition : \n");
+    printf("Enter 2 for subtraction : \n");
+    printf("Enter 3 for division : \n");
+    printf("Enter 4 for multiplication : \n");
+    scanf("%d", &a);
 
-    printf("Enter + for addition : ");
-    printf("Enter - for subtraction : ");
-    printf("Enter / for division : ");
-    printf("Enter * for multiplicationS : ");
+    printf("Enter the first number\n");
+    scanf("%f", &b);
+    printf("Enter the second number\n");
+    scanf("%f", &c);
 
     switch (a)
     {
-    case '+':
+    case 1:
         printf("The sum of the two numbers is ");
-        printf(add());
+        temp = add(b, c);
         break;
-    case '-':
+    case 2:
         printf("The subtration of the two numbers is ");
-        printf(sub());
+        temp = sub(b, c);
         break;
-    case '/':
+    case 3:
         printf("The division of the two numbers is ");
-        printf(div());
+        temp = div(b, c);
         break;
-    case '*':
+    case 4:
         printf("The multiplication of the two numbers is ");
-        printf(mult());
+        temp = mult(b, c);
         break;
 
     default:
-        printf("Invalid input");
         break;
+        printf("Invalid input");
     }
+    printf("%f",temp);
     return 0;
+
+}
+float add(float num1, float num2)
+{
+    return num1 + num2;
+}
+float sub(float num1, float num2)
+{
+    return num1 - num2;
+}
+float div(float num1, float num2)
+{
+    return num1 / num2;
+}
+float mult(float num1, float num2)
+{
+    return num1 * num2;
 }
