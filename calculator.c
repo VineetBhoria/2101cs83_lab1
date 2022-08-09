@@ -7,6 +7,10 @@ float sub(float x, float y)
 {
     return x-y;
 }
+float div(float x, float y)
+{
+    return x/y;
+}
 int main()
 {
     int a;
