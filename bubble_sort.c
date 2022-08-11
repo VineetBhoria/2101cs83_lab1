@@ -35,6 +35,13 @@ int main()
     printf("Enter the size of array: \n");
     scanf("%d",&size);
 	int array[size] ;
+    printf("Enter the array: \n");
+    for (int i = 0; i < size; i++)
+    {
+    scanf("%d",&array[i]);
+        /* code */
+    }
+    
 	int n = sizeof(array) / sizeof(array[0]);
 	bubbleSort(array, n);
 	printf("Sorted array: \n");
