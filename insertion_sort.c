@@ -28,12 +28,12 @@ void insertionSort(int array[], int size) {
 
 // Driver code
 int main() {
-    int size;
+    int size1;
     printf("Enter the size of array: \n");
-    scanf("%d",&size);
-	int array[size] ;
+    scanf("%d",&size1);
+	int array[size1] ;
     printf("Enter the array: \n");
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size1; i++)
     {
     scanf("%d",&array[i]);
         /* code */
